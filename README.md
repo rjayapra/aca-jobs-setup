@@ -11,7 +11,7 @@ This README provides instructions for setting up Azure Container Apps (ACA) usin
 ## Architecture 
 The following diagram shows the architecture and network topology of the sample:
 
-![architecture](image.png)
+![architecture](image/architecture.png)
 
 Microsoft.App/jobs: this samples deploys the following jobs:
 Sender job: this is a manually triggered job that sends a configurable amount of messages to the parameters queue in the Azure Service Bus namespace. The payload of each message contains a random positive integer number comprised in a configurable range.
@@ -20,7 +20,7 @@ Receiver job: this is an event-driven job which execution is triggered by each m
 
 The following diagram shows message flow ;
 
-![message flow](image-1.png)
+![message flow](image/workflow.png)
 
 Here are the steps of the message flow:
 
